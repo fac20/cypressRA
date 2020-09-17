@@ -1,26 +1,51 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from "./components/header";
+import Home from "./components/home";
+import AddUser from "./components/adduser";
+import DisplayUser from "./components/displayuser";
+import Play from "./components/play";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [state, setState] = React.useState("home");
+// delete useEffect then?
+    if (state === "home") {
+        return (
+      <div className="App">
+        <Header> </Header>
+        <Home setState={setState} ></Home>
+      </div>
+      )
+    } else if (state === "play"){
+        console.log("state updated");
+        return (
+        <div className="App">
+          <Header></Header>
+          <Play setState={setState}></Play>
+      </div>
+      )
+    } else if (state === "adduser") {
+      return (
+        <div className="App">
+        <Header> </Header>
+        <AddUser setState={setState}></AddUser>
+      </div>
+      )
+    } else if (state ==="displayuser"){
+      return (
+        <div className="App">
+          <Header> </Header>
+          <DisplayUser setState={setState}></DisplayUser>
+        </div>
+      )
+    }
+  // return (
+  //   <div className="App">
+  //       <Header> </Header>
+  //       <Home setState={setState}></Home>
+
+  //   </div>
+  //);
 }
 
 export default App;
