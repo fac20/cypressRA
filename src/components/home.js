@@ -4,9 +4,7 @@ import Play from "./play";
 import Adduser from "./adduser";
 
 export default function Home({setState}) {
-    const usernames = ["aissshah", "akomiqaia", "Albadylic", "Alexreid95", "Azizi-A", "CampbellDocherty", "Chloeh24", "fairyaksh", "ephieo", "glrta", "hannahgooding", "HettieM", "itsina96", "Ivo-Evans", "jackherizsmith", "jamesj-0", "jenndroid", "jessica440", "jhart5", "Jihyun-Jang", "Joepock123", "khadija-nur", "LiCern", "Lizzy-j", "mhtien", "Netceer", "oliverjam", "RihardsJ", "Roger-Heathcote", "amberrignell", "RunGT", "sofer", "tacotoemeck", "trishtracking", "yvonne-liu", "VatsKan"];
     const [difficulty, setDifficulty] = React.useState(6);
-    
     
     return (
         <main>
