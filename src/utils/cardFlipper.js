@@ -1,8 +1,6 @@
 import React from "react";
 
-const timer = (setCounter) => {
-
-    let counter = 10;
+const timer = (setCounter, counter) => {
     let interval = setInterval(() => {
         if (counter === 0) {
             console.log("finished")

@@ -1,7 +1,7 @@
 import React from "react";
 import "../style/adduser.css";   
 
-function AddUser({setState, usernames}) {
+function AddUser({setState, usernames, setUsernames}) {
     console.log(usernames)
     return (
         <form>
@@ -11,8 +11,10 @@ function AddUser({setState, usernames}) {
             <input type="text" id="username"></input>
             <button type="submit" onClick={(event) => {
                 event.preventDefault();
-                usernames.push(document.getElementById("username").value)
-                console.log(document.getElementById("username").value)
+                let newValue = document.getElementById("username").value
+                let newArray = usernames.push(newValue)
+                setUsernames(newArray)
+                console.log(usernames)
                 setState("displayuser");
             }}>Generate a card with my username </button>
         </form>
