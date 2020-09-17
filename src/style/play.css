@@ -1,0 +1,23 @@
+.play-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background-color: #f7ede2;
+}
+
+.user-card{
+    border: 3px solid #f28482;
+    border-radius: 3rem;
+    margin: 2rem;
+    padding: 0.5rem;
+    background-color: #f5cac3;
+}
+
+img {
+    border-radius: 1.2rem;
+    max-width: 100%;
+}
+
+.hidden > img, .hidden > h3 {
+    opacity: 0;
+    fill: #f28482
+}

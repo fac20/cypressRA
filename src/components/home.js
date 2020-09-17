@@ -3,8 +3,8 @@ import "../style/home.css";
 import Play from "./play";
 import Adduser from "./adduser";
 
-export default function Home({setState}) {
-    const [difficulty, setDifficulty] = React.useState(6);
+export default function Home({setState, usernames, difficulty, setDifficulty}) {
+  
     
     return (
         <main>
@@ -16,9 +16,12 @@ export default function Home({setState}) {
             <p>Difficulty: {difficulty}</p>
 
         <button onClick={() => {
-            console.log("start clicked");
             setState("play");
         }}>Start</button>
+        <button onClick={() => {
+            setState("adduser");
+        }}>Add Your Own GitHub Picture!</button>
+
             {/* // <button onClick={setState("play")}>Add a user</button> */}
         </main>
     )
