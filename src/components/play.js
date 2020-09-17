@@ -12,7 +12,7 @@ export default function Play({ usernames, difficulty }) {
             console.log(res);
             const allData = res.map(user =>  
                 (
-                    <div className="user-card" className="hidden">
+                    <div className="user-card hidden" >
                         <img src={user.avatar_url} alt="user avatar"></img>
                         <h3>{user.login}</h3>
                     </div>
@@ -27,6 +27,6 @@ export default function Play({ usernames, difficulty }) {
     }, [])
 
     return (
-        <div>{data}</div>
+        <div className="play-grid">{data}</div>
     )
 }

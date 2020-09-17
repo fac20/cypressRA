@@ -1,0 +1,16 @@
+.play-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.user-card{
+    border: 3px solid red;
+    border-radius: 3rem;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: bisque;
+}
+
+img {
+    max-width: 100%;
+}
