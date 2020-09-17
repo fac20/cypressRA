@@ -8,8 +8,7 @@ const checkResponse = (response) => {
 };
 
 const fetchData = (difficulty, usernames) => {
-  console.log("fetchData called");
-  let sortedArray = getCorrectData(difficulty, usernames);
+  let sortedArray = getRandomUsers(difficulty, usernames);
       let promiseArray = sortedArray.map(username => {
         return fetch(`https://api.github.com/users/${username}`)
         .then(checkResponse)
@@ -22,9 +21,11 @@ const fetchData = (difficulty, usernames) => {
 
 }
 
-const getCorrectData = (difficulty, usernames) => {
+const getRandomUsers = (difficulty, usernames) => {
   let sortedArray = usernames.sort(() => Math.random() - 0.5);
-  return sortedArray.slice(0, difficulty)
+  let randomised = sortedArray.slice(0, difficulty/2)
+  let randomisedDouble = randomised.concat(randomised);
+  return randomisedDouble.sort(() => Math.random() - 0.5);
 }
 
 export default fetchData;
