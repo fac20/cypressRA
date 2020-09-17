@@ -29,14 +29,14 @@ function App() {
       return (
         <div className="App">
         <Header> </Header>
-        <AddUser setState={setState}></AddUser>
+        <AddUser setState={setState} usernames={usernames}></AddUser>
       </div>
       )
     } else if (state ==="displayuser"){
       return (
         <div className="App">
           <Header> </Header>
-          <DisplayUser setState={setState}></DisplayUser>
+          <DisplayUser setState={setState} usernames={usernames}></DisplayUser>
         </div>
       )
     }

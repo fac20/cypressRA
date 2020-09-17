@@ -18,6 +18,10 @@ export default function Home({setState, usernames, difficulty, setDifficulty}) {
         <button onClick={() => {
             setState("play");
         }}>Start</button>
+        <button onClick={() => {
+            setState("adduser");
+        }}>Add Your Own GitHub Picture!</button>
+
             {/* // <button onClick={setState("play")}>Add a user</button> */}
         </main>
     )
