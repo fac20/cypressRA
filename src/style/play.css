@@ -1,7 +1,10 @@
+.play {
+    background-color: #f7ede2;
+}
+
 .play-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    background-color: #f7ede2;
 }
 
 .user-card{

@@ -5,6 +5,7 @@ import Home from "./components/home";
 import AddUser from "./components/adduser";
 import DisplayUser from "./components/displayuser";
 import Play from "./components/play";
+import Gameover from "./components/gameover"
 
 
 
@@ -21,7 +22,6 @@ function App() {
       </div>
       )
     } else if (state === "play"){
-        console.log("state updated");
         return (
         <div className="App">
           <Header></Header>
@@ -40,6 +40,12 @@ function App() {
         <div className="App">
           <Header> </Header>
           <DisplayUser setState={setState} usernames={usernames}></DisplayUser>
+        </div>
+      )
+    } else if (state === "gameover") {
+      return (
+        <div className="App">
+          <Gameover setState={setState}></Gameover>
         </div>
       )
     }

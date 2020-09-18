@@ -1,0 +1,30 @@
+*{
+    margin: auto;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+}
+
+.gameover h1 {
+    font-family: 'Monofett', cursive;
+    font-size: 8rem;
+}
+
+button {
+    border: 2px solid #f28482;
+    border-radius: 1rem;
+    background-color: #f5cac3;
+}
+
+
+.gameover {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    background-image: linear-gradient(0deg, black, red);
+} 
