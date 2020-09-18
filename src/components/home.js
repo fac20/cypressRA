@@ -1,7 +1,5 @@
 import React from "react";
 import "../style/home.css";  
-import Play from "./play";
-import Adduser from "./adduser";
 
 export default function Home({setState, usernames, difficulty, setDifficulty}) {
   

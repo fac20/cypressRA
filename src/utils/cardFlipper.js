@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 
 const timer = (setCounter, counter) => {
     let interval = setInterval(() => {
