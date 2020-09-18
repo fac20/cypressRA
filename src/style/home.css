@@ -6,6 +6,10 @@ main {
     background-color: skyblue;
 }
 
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
 button{
     margin-top: 5rem;
     width: 10rem;
