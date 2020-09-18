@@ -44,7 +44,7 @@ export default function Play({ usernames, difficulty }) {
                         setSecondFlippedState(index)
                         if (flippedUrl === user.avatar_url) {
                             setResult("You Win"); 
-                            console.log("WInner")
+                            console.log("WInner")   
                         } else {
                             setResult("You Lose");
                         }
@@ -59,41 +59,4 @@ export default function Play({ usernames, difficulty }) {
     )
 
 }
-
-
-
-
-                     // if (event.target.className === "user-card hidden"){
-                        //     event.target.classList.remove("hidden");
-                        //     event.target.classList.add("flipped");
-                        // } else {
-                        //     event.target.parentNode.classList.remove("hidden");
-                        //     event.target.parentNode.classList.add("flipped");    
-                        // }
-                        // setFlippedState(flippedState => flippedState + 1);
-                    // }} 
-
-
-
-// console.log("flippedState", flippedState);
-
-    // if (flippedState === 2) {
-    //     const flippedCards = document.querySelectorAll(".flipped");
-    //     console.log(flippedCards[0].childNodes[0].src)
-    //     if (flippedCards[0].childNodes[0].src === flippedCards[1].childNodes[0].src ) {
-    //         console.log("you win");
-    //         setResult("You Win");
-    //     } else {
-    //         console.log("you lose");
-    //         setResult("You Lose");
-    //     }
-    // }
-
-    
-    // document.querySelectorAll(".user-card").forEach(card => {
-    //     card.addEventListener("click", (event) => {
-    //         event.target.classList.remove("hidden");
-    //         // event.target.removeEventListener()
-
-    //     }
 
