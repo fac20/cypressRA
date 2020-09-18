@@ -19,8 +19,9 @@ export default function Play({ usernames, difficulty }) {
             setData(res);
             timer(setCounter, counter);
         })
-
+/* eslint-disable */
     }, [])
+/* eslint-enable */
 
     if (counter === 0) {
         setCounter(null)
